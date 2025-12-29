@@ -27,5 +27,5 @@ jobs:
         env:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         run: |
-          python bulk_email.py
+          python Bulk_Email_Tue.py
 
