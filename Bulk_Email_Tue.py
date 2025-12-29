@@ -24,7 +24,9 @@ NAME_COLUMN = "Name"
 SMTP_SERVER = "smtp.ionos.com"
 SMTP_PORT = 587
 EMAIL_ADDRESS = "manik@lachicdesigns.com"
-EMAIL_PASSWORD = "Wimbledon2026isthebest!"   # move to env var in real use
+EMAIL_PASSWORD = os.getenv("Wimbledon2026isthebest")
+if not EMAIL_PASSWORD:
+    raise RuntimeError("EMAIL_PASSWORD env var not set")
 
 HANDBAG_IMAGE_PATH_1 = os.path.join(BASE_DIR, "images", "LaChic-090.jpg")
 HANDBAG_IMAGE_PATH_2 = os.path.join(BASE_DIR, "images", "LaChic-094.jpg")
