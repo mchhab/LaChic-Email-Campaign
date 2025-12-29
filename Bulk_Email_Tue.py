@@ -24,7 +24,7 @@ NAME_COLUMN = "Name"
 SMTP_SERVER = "smtp.ionos.com"
 SMTP_PORT = 587
 EMAIL_ADDRESS = "manik@lachicdesigns.com"
-EMAIL_PASSWORD = os.getenv("Wimbledon2026isthebest")
+EMAIL_PASSWORD = os.getenv("Wimbledon2026isthebest!")
 if not EMAIL_PASSWORD:
     raise RuntimeError("EMAIL_PASSWORD env var not set")
 
