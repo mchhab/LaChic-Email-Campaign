@@ -15,7 +15,9 @@ from PIL import Image  # for resizing/compressing images
 # CONFIGURATION
 # ==========================
 
-EXCEL_PATH = "Email_test_bulk_1.xlsx"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+EXCEL_PATH = os.path.join(BASE_DIR, "data", "Email_test_bulk_1.xlsx")
 EMAIL_COLUMN = "Email"
 NAME_COLUMN = "Name"
 
@@ -24,8 +26,8 @@ SMTP_PORT = 587
 EMAIL_ADDRESS = "manik@lachicdesigns.com"
 EMAIL_PASSWORD = "Wimbledon2026isthebest!"   # move to env var in real use
 
-HANDBAG_IMAGE_PATH_1 = "LaChic-090.jpg"
-HANDBAG_IMAGE_PATH_2 = "LaChic-094.jpg"
+HANDBAG_IMAGE_PATH_1 = os.path.join(BASE_DIR, "images", "LaChic-090.jpg")
+HANDBAG_IMAGE_PATH_2 = os.path.join(BASE_DIR, "images", "LaChic-094.jpg")
 
 EMAIL_SUBJECT = "✨ Re: Following up on your interest in our Handbags - La Chic Designs!"
 
