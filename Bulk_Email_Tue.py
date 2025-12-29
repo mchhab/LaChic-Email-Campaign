@@ -15,7 +15,7 @@ from PIL import Image  # for resizing/compressing images
 # CONFIGURATION
 # ==========================
 
-EXCEL_PATH = "Bulk_Email_Tue.xlsx"
+EXCEL_PATH = "Email_test_bulk_1.xlsx"
 EMAIL_COLUMN = "Email"
 NAME_COLUMN = "Name"
 
