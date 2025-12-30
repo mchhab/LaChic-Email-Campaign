@@ -3,7 +3,7 @@ name: Bulk Email Campaign
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 18 * * *" # Tuesdays 10:00 AM America/Chicago (CST/CDT handled best with timezone note below)
+    - cron: "27 18 * * *" # Tuesdays 10:00 AM America/Chicago (CST/CDT handled best with timezone note below)
 
 jobs:
   send:
