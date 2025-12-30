@@ -17,7 +17,7 @@ from PIL import Image  # for resizing/compressing images
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-EXCEL_PATH = os.path.join(BASE_DIR, "data", "Email_test_bulk_1.xlsx")
+EXCEL_PATH = os.path.join(BASE_DIR, "data", "Bulk_Email_Tue.xlsx")
 EMAIL_COLUMN = "Email"
 NAME_COLUMN = "Name"
 
